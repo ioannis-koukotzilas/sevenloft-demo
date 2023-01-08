@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Theme Variables
+--------------------------------------------------------------*/
+
+/* Root
+--------------------------------------------- */
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-icon-base: 'Material Icons', sans-serif;
+
+  --font-size-small: 0.889rem;
+  --font-size-base: 1rem;
+  --font-size-medium: 1.25rem;
+  /* Range: from 1.25rem to 1.563rem */
+  --font-size-large: clamp(1.25rem, calc(1.25rem + ((1vw - 0.2rem) * 0.2236)), 1.563rem);
+  --font-size-xlarge: 2.441rem;
+
+  --font-size-icon-base: 1.25rem;
+  --font-size-icon-medium: 1.563rem;
+  --font-size-icon-large: 1.953rem;
+  --font-size-icon-xlarge: 2.441rem;
+
+  --font-weight-thin: 100;
+  --font-weight-base: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --line-height-base: 1.5;
+  --line-height-title: 1.25;
+  --line-height-solid: 1;
+
+  --bg-base: #fff;
+  --bg-light: #e0e0e0;
+  --bg-dark: #363636;
+  --bg-accent: #66cc00;
+
+  --text-base: #000000;
+  --text-light: #eeeeee;
+  --text-dark: #141414;
+  --text-accent: #66cc00;
+
+  --max-width-base: 2560px;
+  --max-width-small: 540px;
+  --max-width-medium: 720px;
+  --max-width-large: 960px;
+  --max-width-xlarge: 1140px;
+  --max-width-xxlarge: 1320px;
+  --max-width-fluid: 100%;
+}

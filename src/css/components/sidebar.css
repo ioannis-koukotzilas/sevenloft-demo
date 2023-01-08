@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+@media (min-width: 960px) {
+  #sidebar-btn {
+    display: none;
+  }
+}
+
+#sidebar-btn {
+  cursor: pointer;
+  font-family: var(--font-family-icon-base);
+  font-size: 1.5rem;
+}
+
+#sidebar-btn::after {
+  content: '\e5d2';
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 300;
+  width: 85%;
+  max-width: 320px;
+  overflow: auto;
+  background-color: var(--bg-base);
+  transition: 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+#sidebar.active {
+  transform: translateX(0);
+}
+
+#sidebar > .container {
+  padding: 1.5rem 20px;
+}
+
+#sidebar .mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-medium);
+}
+
+#sidebar .mobile-nav ul li {
+  margin-bottom: 0.75rem;
+}
+
+#sidebar .mobile-nav ul li a {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-regular);
+}

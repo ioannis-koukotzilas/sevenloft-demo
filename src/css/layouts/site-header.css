@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--bg-base);
+}
+
+.site-header > .container {
+  max-width: var(--max-width-xxlarge);
+  margin: 0 auto;
+  padding: 1.5rem 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Site Title
+--------------------------------------------- */
+
+.site-header .site-title img {
+  max-width: 9rem;
+}
+
+/* Main Nav
+--------------------------------------------- */
+
+@media (max-width: 959px) {
+  .site-header .main-nav {
+    display: none;
+  }
+}
+
+.site-header .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.site-header .main-nav a {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+}
